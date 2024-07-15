@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-title {
+  @apply font-heading text-2xl font-bold;
+}
+
+.footer-heading {
+  @apply text-xl font-medium;
+}

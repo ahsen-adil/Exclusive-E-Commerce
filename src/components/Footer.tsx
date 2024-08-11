@@ -9,9 +9,9 @@ import qrCodeImage from "../../public/Qrcode 1.png";
 
 const Footer = () => {
   return (
-    <div className="container relative mx-auto flex flex-row justify-between pb-32 pt-20">
-      <div className="grid grid-cols-5">
-        <div className="grid grid-rows-4">
+    <div className="container relative mx-auto flex flex-col justify-center space-y-8 px-4 py-10 lg:flex-row lg:justify-between lg:pb-32 lg:pt-20">
+      <div className="flex flex-col space-y-14 lg:grid lg:grid-cols-5">
+        <div className="mb-4 grid grid-rows-4">
           <h5 className="footer-title">Exclusive</h5>
           <h6 className="text-xl font-medium">Subscribe</h6>
           <p className="">Get 10% off your first order</p>
@@ -30,7 +30,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="absolute right-4 top-1/2 -translate-y-2/3"
+              className="absolute right-4 top-1/2 -translate-y-1/2 lg:-translate-y-2/3"
             >
               <FiSend className="text-2xl" />
             </button>
@@ -40,33 +40,37 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <h6 className="footer-heading">Support</h6>
           <p className="">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
-          <p className="">exclusive@gmail.com</p>
-          <p className="">+88015-88888-9999</p>
+          <Link href="mailto:exclusive@gmail.com" className="">
+            exclusive@gmail.com
+          </Link>
+          <Link href="tel:+88015-88888-9999" className="">
+            +88015-88888-9999
+          </Link>
         </div>
 
         <div className="flex flex-col gap-6">
           <h6 className="footer-heading">Account</h6>
           <ul className="grid grid-rows-5 gap-4">
             <li>
-              <Link href="#">My Account</Link>
+              <Link href="/account">My Account</Link>
             </li>
             <li>
               <Link href="#">Login / Register</Link>
             </li>
             <li>
-              <Link href="#">Cart</Link>
+              <Link href="/cart">Cart</Link>
             </li>
             <li>
-              <Link href="#">Wishlist</Link>
+              <Link href="/wishlist">Wishlist</Link>
             </li>
             <li>
-              <Link href="#">Shop</Link>
+              <Link href="/shop">Shop</Link>
             </li>
           </ul>
         </div>
 
         <div className="flex flex-col gap-6">
-          <h6 className="footer-heading">Quick Link</h6>
+          <h6 className="footer-heading">Quick Links</h6>
           <ul className="grid grid-rows-4 gap-4">
             <li>
               <Link href="#">Privacy Policy</Link>
@@ -113,7 +117,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-primary/40">
+      <div className="text-center text-primary/40 lg:absolute lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2">
         &copy; Copyright Rimel 2022. All right reserved
       </div>
     </div>

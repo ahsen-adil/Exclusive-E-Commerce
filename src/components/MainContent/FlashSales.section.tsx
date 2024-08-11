@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { MouseEvent } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import ProductCard from "./ProductCard";
-import PaginationArrows from "./PaginationArrows";
+import ProductCard from "../ProductCard";
+import PaginationArrows from "../PaginationArrows";
 
 const FlashSales = () => {
   const handleLeft = (e: MouseEvent<HTMLButtonElement>) => {
@@ -46,18 +46,10 @@ const FlashSales = () => {
       </div>
       {/* Products */}
       <div className="flex flex-col gap-y-16 pb-16">
-        <div className="grid grid-rows-1 gap-8">
-          <ProductCard
-            id={1}
-            discountPercentage={0.4}
-            name="HAVIT HV-G92 Gamepad"
-            image="https://placehold.co/270x250.png"
-            price={160}
-          />
-        </div>
+        <div className="grid grid-rows-1 gap-8"></div>
         <Link
           href="/products"
-          className="relative left-1/2 w-fit -translate-x-1/2 rounded-md bg-button-2 px-12 py-4 font-medium text-text"
+          className="relative left-1/2 w-fit -translate-x-1/2 rounded-md bg-button-2 px-12 py-4 font-medium text-text transition-colors duration-300 hover:bg-[#E07575]"
         >
           View All Products
         </Link>

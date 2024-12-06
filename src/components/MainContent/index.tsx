@@ -4,6 +4,7 @@ import Section from "../Section";
 import ThisMonth from "./ThisMonth.section";
 import OurProducts from "./OurProducts.section";
 import Featured from "./Featured.section";
+import Music from "./music";
 
 const MainContent = () => {
   return (
@@ -16,6 +17,9 @@ const MainContent = () => {
       </Section>
       <Section name="This Month">
         <ThisMonth />
+      </Section>
+      <Section name="">
+      <Music/>
       </Section>
       <Section name="Our Products">
         <OurProducts />

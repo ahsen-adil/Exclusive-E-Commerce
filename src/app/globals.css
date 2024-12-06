@@ -9,3 +9,7 @@
 .footer-heading {
   @apply text-xl font-medium;
 }
+
+body{
+  background: #fdf8e4;
+}

@@ -14,9 +14,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Lynk",
+  title: "Exclusive",
   description:
-    "Lynk is a cutting-edge e-commerce platform designed to revolutionize the way you shop online. Our mission is to provide a seamless and personalized shopping experience, connecting you with a vast array of products from top brands and local sellers.",
+    "Exclusive is a cutting-edge e-commerce platform designed to revolutionize the way you shop online. Our mission is to provide a seamless and personalized shopping experience, connecting you with a vast array of products from top brands and local sellers.",
 };
 
 export default function RootLayout({
